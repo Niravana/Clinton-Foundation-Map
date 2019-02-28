@@ -19,5 +19,4 @@ for row in df.itertuples():
     popup = folium.Popup(iframe, max_width=2650)
     folium.Marker(location = [row.lat, row.long], popup = popup).add_to(mc)
 
-m.save(outfile= "qlikmap.html")    
 m
